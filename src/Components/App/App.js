@@ -59,6 +59,10 @@ class App extends React.Component {
     })
   }
 
+  componentDidMount() {
+    Spotify.getAccessToken();
+  }
+
   render() {
     return (
       <div>
